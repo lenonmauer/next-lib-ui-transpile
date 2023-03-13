@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "yarn clean && yarn transpile && yarn emit-types",
-    "transpile": "babel src --out-dir dist --extensions '.ts,.tsx,.jsx,.js' --source-maps inline",
+    "transpile": "babel src --out-dir dist --extensions '.ts,.tsx,.jsx,.js' --source-maps",
     "emit-types": "tsc --emitDeclarationOnly --declaration --outDir dist",
     "clean": "rimraf dist",
     "prepublishOnly": "yarn build",
